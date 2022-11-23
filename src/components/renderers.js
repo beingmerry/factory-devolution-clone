@@ -3,7 +3,11 @@ import React, { PureComponent } from "react";
 class Box extends PureComponent {
   render() {
     const size = 100;
-    const x = this.props.x - size / 2;
+    let x = this.props.x - size / 2
+    for (let i = 0; i < 100; i ++) {
+      
+      x = this.props.x - i;
+    }
     const y = this.props.y - size / 2;
     return (
       <div style={{ position: "absolute", width: size, height: size, backgroundColor: "red", left: x, top: y }} />
