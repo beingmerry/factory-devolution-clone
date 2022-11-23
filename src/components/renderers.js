@@ -5,7 +5,6 @@ class Box extends PureComponent {
     const size = 100;
     let x = this.props.x - size / 2
     for (let i = 0; i < 100; i ++) {
-      
       x = this.props.x - i;
     }
     const y = this.props.y - size / 2;
